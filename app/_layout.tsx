@@ -1,4 +1,4 @@
-import { SplashScreen, Stack } from "expo-router";
+import { Stack, SplashScreen } from "expo-router"
 
 import './globals.css';
 import { useFonts } from 'expo-font';
@@ -22,5 +22,7 @@ export default function RootLayout() {
 
   if(!fontsLoaded) return null;
 
-  return <Stack />;
+  return (
+    <Stack screenOptions={{ headerShown: false}}/>
+  );
 }
