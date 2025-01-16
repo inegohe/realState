@@ -4,12 +4,12 @@ import { ActivityIndicator } from "react-native";
 import { Redirect, Slot } from "expo-router";
 
 export default function AppLayout() {
-    const { loading, isloggedIn } = useGloabalContext();
+    const { loading, isloggedIn } = useGlobalContext();
 
     if(loading){
         return(
             <SafeAreaView className='bg-white h-full flex justify-center items-center'>
-            <ActivityIndicator className='text-primary-300' size= 'Large'/>
+            <ActivityIndicator className='text-primary-300' size='large'/>
             </SafeAreaView>
         )
     }
