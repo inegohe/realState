@@ -68,7 +68,7 @@ export async function getCurrentUser() {
     try{
         const response = await account.get();
         
-        if(!response.$id){
+        if(response.$id){
             const useAvatar = avatar.getInitials(response.name);
         
         return {
@@ -76,6 +76,8 @@ export async function getCurrentUser() {
             avatar: useAvatar.toString(),
         }
         }
+
+        return null;
     }
     catch(error){
         console.error(error);

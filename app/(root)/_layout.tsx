@@ -4,7 +4,7 @@ import { ActivityIndicator } from "react-native";
 import { Redirect, Slot } from "expo-router";
 
 export default function AppLayout() {
-    const { loading, isloggedIn } = useGlobalContext();
+    const { loading, isLoggedIn } = useGlobalContext();
 
     if(loading){
         return(
@@ -14,7 +14,7 @@ export default function AppLayout() {
         )
     }
 
-    if(!isloggedIn) return <Redirect href='/sign-in' />
+    if(!isLoggedIn) return <Redirect href='/sign-in' />
 
     return <Slot />
 }
