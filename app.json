@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ikhos256.realState"
     },
     "web": {
       "bundler": "metro",
@@ -36,7 +37,7 @@
       [
         "expo-font",
         {
-          "fonts":[
+          "fonts": [
             "./assets/fonts/Rubik-bold.ttf",
             "./assets/fonts/Rubik-ExtraBold.ttf",
             "./assets/fonts/Rubik-Medium.ttf",
@@ -49,6 +50,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "674775fc-b8a1-4a33-9642-5bd48cc2d87b"
+      }
     }
   }
 }
