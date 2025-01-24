@@ -26,7 +26,7 @@ export default function Index() {
     params: {
       filter: params.filter!,
       query: params.query!,
-      limit:6.
+      limit:6,
     },
     skip: true,
   })
